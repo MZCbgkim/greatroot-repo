@@ -11,6 +11,6 @@
 
 <P>  The time on the server is ${serverTime}. </P>
 <img alt="" src="resources/cat.png">
-커여워 ~
+
 </body>
 </html>
