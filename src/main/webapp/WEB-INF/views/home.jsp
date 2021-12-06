@@ -10,7 +10,7 @@
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>
-<img alt="" src="resources/cat.png">
+<img src="https://greatroot-img.s3.ap-northeast-2.amazonaws.com/cat.png" onclick="greatroot-web-ALB-1994471449.ap-northeast-2.elb.amazonaws.com"/>
 
 </body>
 </html>
