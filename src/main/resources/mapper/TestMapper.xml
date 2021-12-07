@@ -1,0 +1,27 @@
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.great.root.mapper.TestDAO">
+	<resultMap type="com.great.root.UserDTO" id="usermap">
+		<id column="_id" property="id"/>
+		<result column="name" property="name"/>
+		<result column="age" property="age"/>
+		<result column="job" property="job"/>
+	</resultMap>
+
+	<select id="list" resultMap="usermap">
+		select * from greattest
+	</select>
+	
+	<insert id="create">
+	    insert into greattest (name, age, job) values (
+	    	#{name}, #{age}, #{job}
+	    )
+	</insert>
+
+	<delete id="delete">
+		delete from greattest where _id=#{id}		
+	</delete>
+
+</mapper>
